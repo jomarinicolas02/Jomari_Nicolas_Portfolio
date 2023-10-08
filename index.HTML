@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8f447f7527.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Picture/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i> 
+        </nav>
+        <div class="header-text">
+            <p>Self-Taught Data Analyst</p>
+            <h1>Hi, I'm <span>Jomari</span><br>Nicolas</h1>
+        </div>
+    </div>
+</div>
+<!---------------------about------------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Picture/Koo.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Welcome to my little corner of the Internet! I’m a university students with a passion for gaming and data. I used to be a semi-pro Valorant gamer 
+                    for my university team with experience in deciphering player behaviour and optimizing in-game strategies. After this phase, 
+                    I have come to appreciate that data is the key to unlocking hidden patterns. 
+                    Thus, this website serves as a record of my journey to enhance my statistical analysis and data visualization skills. 
+                    You can expect to explore my projects and insights generated from diverse datasets, 
+                     Power BI stands as my primary data analysis tool, besides  Excel, SQL, and Python. My expertise lies in utilizing Power BI to design compelling reports and dashboards to enhance user experience and simplifying the presentation of complex data. Come along as I take on complex datasets and refine my programming skills to give meaning to my data.
+
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Data Visualization</span><br>Tableau, Microsoft Power BI, and Excel</li>
+                        <li><span>Data Management and Cleaning</span><br>Excel, SQL and Power Query</li>
+                        <li><span>Coding Skills</span><br>Python(Pandas, NumPy, Matplotlib and BeautifulSoup), C++, HTML/CSS, Javascript</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022 - 2023</span><br>eSport Data Analyst</li>
+                        <li><span>2019 - 2022</span><br>Old Navy: Sales Associate</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Expected Grad Year: 2026</span><br>Briar Cliff University (Sioux City, Iowa)</li>
+                        <li><span>Certificate</span><br>Google data analytics certificate</li>
+                        <li><span>Certificate</span><br>PL-300: Microsoft Power BI Data Analyst</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!----------services---------->
+
+
+</script>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-virus-covid"></i>
+                <h2>Covid Data Analyst</h2>
+                <p>In this project, I worked with COVID19 dataset, published by John Hopkins University, which consists of data related to the cumulative number of confirmed cases per day, in each country.Using python, panda and plotlib to illustrate my data and analysis it.</p>
+                <a href="https://github.com/jomarinicolas02/Covid-Data-Analyst-.git">Link to github</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-money-check-dollar"></i> 
+                <h2>Investment Portfolio Analysis</h2>
+                <p>This is a collaborative project. Our project leverages customer investment data to conduct an investment portfolio analysis within Power BI. At this stage, we have created graphs that showcase the portfolio returns in comparison to established benchmarks.</p>
+                <a href="https://github.com/jomarinicolas02/Investment_portfolio_Analysis.git">Link to github</a>
+            </div>     
+            </div>
+        </div>
+    </div>
+</div>
+<!----------portfolio---------->
+<div id="portfolio">
+    <div class="container"></div>
+      <h1 class="sub-title">Dashboards</h1>
+      <div class="work-list">
+       <div class="work">
+        <img src="Picture/power.PNG" >
+        <div class="layer">
+            <h3>Investment Portfolio Dashboard</h3>
+            <p>Using Microsoft Power BI to analysis customer's portfolio to see performance of investments.</p>
+            <a href="https://github.com/jomarinicolas02/Investment_Portfolio_Analysis.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="Picture/House-Dashboard.png" >
+        <div class="layer">
+            <h3>Housing Prices Dashboard</h3>
+            <p>Used Tableau to visualize the housing market trends in King County, Washington, focusing on the 2014-2015 period.</p>
+            <a href="https://public.tableau.com/app/profile/joey.nicolas"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+       </div> 
+       <div class="work">
+        <img src="Picture/Coffeeee-Dashboard.PNG" >
+        <div class="layer">
+            <h3>Coffee Dashboard</h3>
+            <p>Using Excel to create a dashboard to showcase sale trends, the popularity between four coffee types and which customer purchased the most coffee.</p>
+            <a href="https://github.com/jomarinicolas02/Coffee_Dashboard.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+       </div> 
+    </div>
+</div>
+
+<!----------contact---------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> jomarinicolas@outlook.com</p>
+                <p><i class="fa-solid fa-phone"></i> 778-908-0382</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/jomarinicolas/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href= "Picture/Jomari_Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name = "submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright by Jomari Nicolas <i class="fa-solid fa-heart"></i</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    } 
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyakcZRzejw0VijtHAX8hy-5EntEFJyTYwqaTT7ns0_NKOSIiMXMPBw0NDvTB6T4wyH/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
